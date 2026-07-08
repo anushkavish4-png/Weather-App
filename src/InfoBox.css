@@ -1,0 +1,77 @@
+.InfoBox {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer .MuiCard-root {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px !important;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cardContainer .MuiCard-root:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25) !important;
+}
+
+.cardContainer .MuiCardMedia-root {
+    height: 220px !important;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.cardContainer .MuiCardContent-root {
+    padding: 1.5rem !important;
+    
+}
+
+.cardContainer h5 {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardContainer svg {
+    font-size: 1.8rem;
+    color: #0284c7;
+}
+
+.cardContainer p {
+    margin: 6px 0;
+    font-size: 1.05rem;
+    color: #334155;
+}
+
+.cardContainer i {
+    color: #0f172a;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .InfoBox {
+        padding: 1rem;
+    }
+
+    .cardContainer .MuiCard-root {
+        max-width: 100%;
+    }
+}
